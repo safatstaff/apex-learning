@@ -389,7 +389,54 @@
     right: 16px;
     top: 20px;
 }
+.srs_header_pr .srs_mobile_menu_pr .srs_profile-link {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
 
+.srs_header_pr .srs_mobile_menu_pr .srs_profile-link:hover {
+    color: rgb(0 55 139); /* Primary color */
+}
+
+.srs_header_pr .srs_mobile_menu_pr .srs_profile-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.srs_header_pr .srs_mobile_menu_pr .srs_profile-icon {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+.srs_header_pr .srs_mobile_menu_pr .srs_profile-text {
+    font-size: 1rem;
+}
+
+.srs_header_pr .srs_mobile_menu_pr .srs_arrow-icon {
+    width: 10px;
+    height: 10px;
+    fill: currentColor;
+}
+
+.srs_header_pr .srs_mobile_menu_pr .srs_arrow-icon .srs_fill-current {
+    fill: currentColor;
+}
+.srs_header_pr .srs_mobile_menu_pr .srs_custom-divider {
+    margin-bottom: 1.5rem; /* 6 * 0.25rem = 1.5rem */
+    height: 1px;
+    width: 100%;
+    background-color: #E0E0E0; /* Assuming neutral-30 corresponds to #E0E0E0 */
+}
         }
         @media (max-width:767px){
             .srs_header_pr .srs_btn_sec .srs_mobile_item .srs_cart{
@@ -1497,6 +1544,26 @@
         </div>
         <div class="srs_mobile_menu_pr">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" class="srs_cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+
+            <a class="srs_profile-link" href="/dashboard/my-profile">
+                <div class="srs_profile-container">
+                    <svg class="srs_profile-icon" width="14" height="14" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.80908 5.56418C8.57692 5.00419 9.07693 4.09791 9.07693 3.07692C9.07693 1.3803 7.69663 0 6.00001 0C4.30339 0 2.92309 1.3803 2.92309 3.07692C2.92309 4.09791 3.42308 5.00419 4.19094 5.56418C2.28219 6.29461 0.923096 8.14526 0.923096 10.3077C0.923096 11.2408 1.68226 12 2.6154 12H9.38462C10.3178 12 11.0769 11.2408 11.0769 10.3077C11.0769 8.14526 9.71783 6.29461 7.80908 5.56418ZM3.84617 3.07692C3.84617 1.8893 4.81238 0.923086 6.00001 0.923086C7.18763 0.923086 8.15385 1.8893 8.15385 3.07692C8.15385 4.26455 7.18763 5.23078 6.00001 5.23078C4.81238 5.23078 3.84617 4.26455 3.84617 3.07692ZM9.38462 11.0769H2.6154C2.19125 11.0769 1.84618 10.7318 1.84618 10.3077C1.84618 8.01722 3.70956 6.15382 6.00003 6.15382C8.29051 6.15382 10.1539 8.0172 10.1539 10.3077C10.1539 10.7318 9.80879 11.0769 9.38462 11.0769Z" fill="currentColor"></path>
+                    </svg>
+                    <span class="srs_profile-text">My Profile</span>
+                </div>
+                <svg class="srs_arrow-icon" width="10" height="10" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_203_26789)">
+                        <path d="M5.74932 3.33732L2.51051 0.091756C2.38857 -0.0304159 2.19071 -0.0306034 2.06857 0.0913029C1.9464 0.213209 1.9462 0.411068 2.0681 0.53324L5.30715 3.77904C5.42899 3.90088 5.42899 4.09913 5.30691 4.22121L2.0681 7.46677C1.9462 7.58894 1.9464 7.7868 2.06857 7.90871C2.12955 7.96958 2.20945 8.00001 2.2893 8.00001C2.36938 8.00001 2.44946 7.96941 2.51051 7.90824L5.74909 4.66291C6.11462 4.29738 6.11462 3.70262 5.74932 3.33732Z" class="srs_fill-current"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_203_26789">
+                            <rect width="8" height="8" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <div class="srs_custom-divider"></div>
         </div>
     </header>
 </body>
